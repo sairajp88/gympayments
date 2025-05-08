@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* App Header */
 .App-header {
-  background-color: #282c34;
+  background-color: #343a40; /* Bootstrap dark color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.2rem;
   color: white;
+  padding: 3rem; /* Increased padding for better spacing */
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navbar Customization */
+.navbar {
+  background-color: #90520c;
+  color: white;
+  padding: 20px 40px; /* Adjusted padding for navbar */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for better visual */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  color: #dbfd01;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #f0f0f0;
+  margin-right: 1rem;
+  font-size: 1.1rem; /* Slightly larger text for readability */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fd9801;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #fd9801;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #f79e1b;
+  color: #fff;
+}
+
+/* Card Components */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.table {
+  margin-top: 0rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 1.2rem; /* Add padding for better alignment of text in tables */
+}
+
+/* Summary Card Styling */
+.summary-card {
+  border-radius: 10px;
+  background-color: #fd9801;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card .card-title {
+  font-weight: bold;
+}
+
+.summary-card .card-text {
+  font-size: 1.5rem;
+}
+
+.summary-card:hover {
+  background-color: #f79e1b;
+  cursor: pointer;
+}
+
+/* Misc Styling */
+#category__ {
+  color: aliceblue;
+}
+
+#names {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#padd {
+  padding-bottom: 12px;
+}
+
+#edit {
+  width: 80%;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
